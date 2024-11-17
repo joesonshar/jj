@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(D:/vscode/images/家.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .home-button {
+            position: fixed;
+            /* 固定位置 */
+            top: 0;
+            /* 位于页面顶部 */
+            left: 50%;
+            /* 水平居中 */
+            transform: translateX(-50%);
+            /* 将按钮向左移动其宽度的一半，实现居中 */
+            padding: 10px 20px;
+            /* 内边距 */
+            background-color: #4CAF50;
+            /* 背景颜色 */
+            color: white;
+            /* 文字颜色 */
+            text-align: center;
+            /* 文字居中 */
+            text-decoration: none;
+            /* 去除下划线 */
+            display: inline-block;
+            /* 行内块元素 */
+            font-size: 16px;
+            /* 字体大小 */
+            border: none;
+            /* 无边框 */
+            cursor: pointer;
+            /* 鼠标样式 */
+            z-index: 1000;
+            /* 确保按钮在背景图片上方 */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            background-color: #333;
+            /* 导航栏背景颜色 */
+            overflow: hidden;
+            /* 防止列表项超出容器 */
+        }
+
+        .nav ul {
+            list-style-type: none;
+            /* 移除列表项的默认标记 */
+            padding: 0;
+            /* 移除列表项的内边距 */
+            margin: 0;
+            /* 移除列表项的外边距 */
+        }
+
+        .nav li {
+            float: left;
+            /* 使列表项水平排列 */
+        }
+
+        .nav a {
+            display: block;
+            /* 使链接占满整个列表项 */
+            color: white;
+            /* 链接文字颜色 */
+            text-align: center;
+            /* 文字居中 */
+            padding: 14px 16px;
+            /* 内边距 */
+            text-decoration: none;
+            /* 去除下划线 */
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            /* 鼠标悬停时的背景颜色 */
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+            /* 鼠标悬停时的背景颜色 */
+        }
+    </style>
+</head>
+
+
+<h1>HOMETOWN</h1>
+<div class="nav">
+    <ul>
+        <li><a href="个人主页页面.html">首页</a></li>
+        <li><a href="favorite.html">我的喜欢</a></li>
+        <li><a href="food.html">我喜欢的食物</a></li>
+        <li><a href="friends.html">我的好朋友</a></li>
+        <li><a href="hometown.html">我的家乡</a></li>
+        <li><a href="idol.html">我的偶像</a></li>
+    </ul>
+</div>
+
+<body>
+    <a href="个人主页页面.html" class="home-button">返回首页</a>
+</body>
+
+<h2>家乡简介</h2>
+<p>仙桃市，原名沔阳，位于中国湖北省中部，拥有着1500多年的建制历史。这座城市北依汉水，南靠长江，被誉为江汉平原的中心城市，素有“江汉明珠”之美誉，同时也是荆楚文化的重要发祥地之一。仙桃市紧邻武汉市，具有贯通南北、承东启西的区位优势，交通便利，包括318国道、汉宜高速铁路、沪渝高速等。
+</p>
+
+<p>仙桃市以其丰富的历史文化而著称。这里不仅出土了众多新石器时代的文化遗物，还有战国时期的青铜器、南朝时期的瓷器等珍贵文物。城市中还有纪念屈原的沧浪馆，以及许多其他的历史遗迹和文化景点。此外，仙桃市还以其独特的人文底蕴而闻名，被誉为“文化之乡”和“状元之乡”，人才资源丰富。
+</p>
+
+<p>在经济发展方面，仙桃市是国家园林城市、国家新型城镇化试点、国家全域旅游示范区、国家卫生城市、国家智慧城市试点。2022年，全市地区生产总值达到1013.14亿元。市内拥有沔阳小镇、排湖密塘渔村、沔城风景名胜区等景点，同时也是中国民间文艺之乡、亚洲体操之乡。
+</p>
+
+<p>历史上，仙桃市曾是沔阳州府的所在地，后来在1986年5月27日经国务院批准，撤销沔阳县，设立仙桃市。1994年10月，被湖北省人民政府批准为省直管市。</p>
+
+<p>仙桃市的城市精神被概括为“开放开明，尚德尚进”，体现了仙桃人宽广的胸怀、思想解放、诚信为本、奋发向上的精神风貌。这座城市还以其体操成就而闻名，被誉为“中国体操之乡”和“世界冠军摇篮”，从这里走出了多位世界冠军，包括李小双、李大双、杨威等
+<p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <!-- 第一张图片和介绍 -->
+    <div style="display: flex; flex-direction: column; padding: 10px;">
+        <img src="images/仙桃.jpg" alt="faker" style="width: 200px; height: auto; border: 2px solid black;">
+        <figcaption class="image-caption" style="text-align: center;">仙桃</figcaption>
+    </div>
+    <div style="display: flex; flex-direction: column; padding: 10px;">
+        <img src="images/40.jpg" alt="faker" style="width: 200px; height: auto; border: 2px solid black;">
+        <figcaption class="image-caption" style="text-align: center;">沔阳小镇</figcaption>
+    </div>
+
+    <div style="display: flex; flex-direction: column; padding: 10px;">
+        <img src="images/0000.jpg" alt="faker" style="width: 200px; height: auto; border: 2px solid black;">
+        <figcaption class="image-caption" style="text-align: center;">风景</figcaption>
+    </div>
+    <!-- 第二张图片和介绍 -->
+    <div style="display: flex; flex-direction: column; padding: 10px;">
+        <img src="images/00.jpg" alt="风景" style="width: 200px; height: auto; border: 2px solid black ;">
+        <figcaption class="image-caption" style="text-align: center;">风景</figcaption>
+    </div>
+</div>
+
+<h2>人物介绍：雷军</h2>
+<p>雷军，1969年12月16日出生于湖北仙桃，是一位杰出的中国企业家和天使投资人。他毕业于武汉大学，并在1992年初加入了金山公司。雷军不仅是中国互联网的代表人物，也是全球电子商务创新的领袖之一。他曾获得多项国内外荣誉，包括中国经济年度人物、十大财智领袖人物、中国互联网年度人物等，并被《福布斯》（亚洲版）评为2014年度商业人物。
+</p>
+
+<p>雷军是小米科技的创始人，曾任小米智能技术有限公司的法定代表人、执行董事、经理，以及第十三、十四届全国人民代表大会代表和全国工商联副主席。他还曾兼任金山、YY、猎豹移动等三家上市公司的董事长。雷军是小米科技的创始人，曾任小米智能技术有限公司的法定代表人、执行董事、经理，以及第十三、十四届全国人民代表大会代表和全国工商联副主席。他还曾兼任金山、YY、猎豹移动等三家上市公司的董事长。
+</p>
+
+<p>雷军的职业生涯充满传奇色彩，他不仅是一位成功的企业家，还是一位具有远见卓识的投资者。他在创业过程中经历了多次重要蜕变，尤其是在小米科技的发展过程中，他深刻体会到了制造业的不易和硬件的难度。2024年，雷军在全国两会期间提出了关于绿色低碳、人工智能、智能驾驶、智能制造等领域的建议，显示了他对科技创新和社会发展的关注。
+</p>
+
+<p>此外，雷军还是一位充满激情和梦想的创业者，他对于智能电动汽车业务的投入显示了他对于创新的持续追求和对于未来的坚定信念</p>
+
+<div style="display: flex; flex-direction: column; padding: 10px;">
+    <img src="images/雷军.jpg" alt="faker" style="width: 200px; height: auto; border: 2px solid black;">
+    <figcaption class="image-caption" style="text-align: center;"></figcaption>
+</div>
+<h3><a href="https://cn.bing.com/search?q=%E4%BB%99%E6%A1%83%E5%B8%82&gs_lcrp=EgRlZGdlKgcIAxBFGMIDMgcIABBFGMIDMgcIARBFGMIDMgcIAhBFGMIDMgcIAxBFGMIDMgkIBBAFGEIYwwMyCQgFEAUYQhjDAzIJCAYQBRhCGMMDMgkIBxAFGEIYwwPSAQsxMjk4NDUzajBqMagCCLACAQ&FORM=ANAB01&ucpdpc=UCPD&adppc=EdgeStart&PC=NMTS"
+        target="_blank">点击咨询更多详情</a>
+</h3>
+
+
+
+
+
+
+
+
+</html>

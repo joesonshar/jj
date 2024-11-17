@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(D:/vscode/images/朋友.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .image-item {
+            margin-right: 10px;
+        }
+
+        .image-item:last-child {
+            margin-right: 0;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        .image-caption {
+            text-align: center;
+            color: #ddd;
+        }
+
+
+        .home-button {
+            position: fixed;
+            /* 固定位置 */
+            top: 0;
+            /* 位于页面顶部 */
+            left: 50%;
+            /* 水平居中 */
+            transform: translateX(-50%);
+            /* 将按钮向左移动其宽度的一半，实现居中 */
+            padding: 10px 20px;
+            /* 内边距 */
+            background-color: #4CAF50;
+            /* 背景颜色 */
+            color: white;
+            /* 文字颜色 */
+            text-align: center;
+            /* 文字居中 */
+            text-decoration: none;
+            /* 去除下划线 */
+            display: inline-block;
+            /* 行内块元素 */
+            font-size: 16px;
+            /* 字体大小 */
+            border: none;
+            /* 无边框 */
+            cursor: pointer;
+            /* 鼠标样式 */
+            z-index: 1000;
+            /* 确保按钮在背景图片上方 */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            background-color: #333;
+            /* 导航栏背景颜色 */
+            overflow: hidden;
+            /* 防止列表项超出容器 */
+        }
+
+        .nav ul {
+            list-style-type: none;
+            /* 移除列表项的默认标记 */
+            padding: 0;
+            /* 移除列表项的内边距 */
+            margin: 0;
+            /* 移除列表项的外边距 */
+        }
+
+        .nav li {
+            float: left;
+            /* 使列表项水平排列 */
+        }
+
+        .nav a {
+            display: block;
+            /* 使链接占满整个列表项 */
+            color: white;
+            /* 链接文字颜色 */
+            text-align: center;
+            /* 文字居中 */
+            padding: 14px 16px;
+            /* 内边距 */
+            text-decoration: none;
+            /* 去除下划线 */
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            /* 鼠标悬停时的背景颜色 */
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+            /* 鼠标悬停时的背景颜色 */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var images = document.querySelectorAll('.zoomable-image');
+            images.forEach(function (img) {
+                img.addEventListener('dblclick', function () {
+                    var zoomedImageUrl = 'zoomed-image.html?image=' + encodeURIComponent(img.src);
+                    window.open(zoomedImageUrl, '_blank');
+                });
+            });
+        });
+    </script>
+
+
+</head>
+
+
+<h1>MOREFRIEND</h1>
+
+<body>
+    <a href="个人主页页面.html" class="home-button">返回首页</a>
+</body>
+
+<div class="nav">
+    <ul>
+        <li><a href="个人主页页面.html">首页</a></li>
+        <li><a href="favorite.html">我的喜欢</a></li>
+        <li><a href="food.html">我喜欢的食物</a></li>
+        <li><a href="friends.html">我的好朋友</a></li>
+        <li><a href="hometown.html">我的家乡</a></li>
+        <li><a href="idol.html">我的偶像</a></li>
+
+    </ul>
+</div>
+<h2>高中</h2>
+<div class="image-container">
+    <div class="image-item">
+        <img src="images/姿色.jpg" alt="" class="zoomable-image">
+        <figcaption class="image-caption">两个帅气的京爷</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/高中.jpg" alt="13" class="zoomable-image">
+        <figcaption class="image-caption">13班</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/毕业.jpg" alt="毕业" class="zoomable-image">
+        <figcaption class="image-caption">毕业</figcaption>
+    </div>
+    <!-- 注意：下面这一行应该与上面的结构保持一致，不应该嵌套额外的 .image-item -->
+    <div class="image-item">
+        <img src="images/屎哥.jpg" alt="屎哥" class="zoomable-image">
+        <figcaption class="image-caption">屎哥</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/jz.jpg" alt="jz" class="zoomable-image">
+        <figcaption class="image-caption">jz</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/bir.jpg" alt="生日" class="zoomable-image">
+        <figcaption class="image-caption">生日</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/迷人.jpg" alt="迷人" class="zoomable-image">
+        <figcaption class="image-caption">迷人</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/氛围感男神.jpg" alt="国军" class="zoomable-image">
+        <figcaption class="image-caption">国军</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/dzy.jpg" alt="代智颖" class="zoomable-image">
+        <figcaption class="image-caption">代智颖</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/罗禹.jpg" alt="罗禹" class="zoomable-image">
+        <figcaption class="image-caption">罗禹</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/泽哥.jpg" alt="泽哥" class="zoomable-image">
+        <figcaption class="image-caption">泽哥</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/大帅哥.jpg" alt="大帅哥" class="zoomable-image">
+        <figcaption class="image-caption">大帅哥</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/乐乐.jpg" alt="乐乐" class="zoomable-image">
+        <figcaption class="image-caption">乐乐</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/疫情.jpg" alt="疫情" class="zoomable-image">
+        <figcaption class="image-caption">疫情</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/泽哥帅照.jpg" alt="泽哥帅照" class="zoomable-image">
+        <figcaption class="image-caption">泽哥帅照</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/狼人杀.jpg" alt="狼人杀" class="zoomable-image">
+        <figcaption class="image-caption">狼人杀</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/小趴菜.jpg" alt="小趴菜" class="zoomable-image">
+        <figcaption class="image-caption">小趴菜</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/聚会.jpg" alt="聚会" class="zoomable-image">
+        <figcaption class="image-caption">聚会</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/睡衣.jpg" alt="睡衣" class="zoomable-image">
+        <figcaption class="image-caption">睡衣</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/红头发.jpg" alt="红头发" class="zoomable-image">
+        <figcaption class="image-caption">红头发</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/内卷.jpg" alt="内卷" class="zoomable-image">
+        <figcaption class="image-caption">内卷</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/3个精神小伙.jpg" alt="3个精神小伙" class="zoomable-image">
+        <figcaption class="image-caption">3个精神小伙</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/刘大帅哥jpg.jpg" alt="刘大帅哥" class="zoomable-image">
+        <figcaption class="image-caption">刘大帅哥</figcaption>
+    </div>
+    <div class="image-item">
+        <img src="images/爬山二人组.jpg" alt="爬山二人组" class="zoomable-image">
+        <figcaption class="image-caption">爬山二人组</figcaption>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+</html>
